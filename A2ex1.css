@@ -1,0 +1,114 @@
+/* ===================================================
+   REGLES OBLIGATÒRIES DE L'ENUNCIAT
+   =================================================== */
+
+/* 1. body: tipus de lletra "serif", de mida 1.2em i color de fons #fddaef */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2em;
+    background-color: #fddaef;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 2. Paràgraf general: altura de línia de 125% */
+p {
+    line-height: 125%;
+    margin-bottom: 1em;
+}
+
+/* 3. Títol de primer nivell: color blau i lletra arial */
+h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+}
+
+/* 4. Títol de segon, tercer, etc. nivells: color #cc22ff i lletra arial */
+h2, h3, h4, h5, h6 {
+    color: #cc22ff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+/* 5. Codi Python: caixa amb vorera 1px, línia contínua i de color negre */
+.codigo-python {
+    border: 1px solid black;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.9em;
+    overflow-x: auto;
+}
+
+/* 6. Paràgraf amb ID especial: primera lletra negreta i de mida 300% */
+#especial::first-letter {
+    font-weight: bold;
+    font-size: 300%;
+    color: #cc22ff;
+}
+
+/* ===================================================
+   CLASSES APLICADES A MÉS D'UN PARÀGRAF (amb >= 3 propietats)
+   =================================================== */
+
+/* Classe 1: .destacat */
+.destacat {
+    background-color: #f0f4f8;
+    color: #102a43;
+    padding: 12px 18px;
+    border-left: 5px solid #cc22ff;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Classe 2: .nota-informativa */
+.nota-informativa {
+    background-color: #fff9db;
+    color: #5c4813;
+    padding: 10px 15px;
+    border: 1px solid #ffe066;
+    border-radius: 6px;
+    font-style: italic;
+}
+
+/* ===================================================
+   MILLORES D'ESTRUCTURA I ESTÈTICA
+   =================================================== */
+
+/* Targeta central per donar un aspecte modern i net */
+.contenidor {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Cites textuals estilitzades */
+blockquote {
+    margin: 1.5em 0;
+    padding: 12px 20px;
+    background-color: #fdf2f8;
+    border-left: 4px solid #cc22ff;
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Enllaços amb efecte d'interacció */
+a {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #cc22ff;
+}
