@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. Reset i Estils Generals (Box Model)
+   1. Reset i Estils Generals (Disseny Clar Original)
    ========================================================================== */
 * {
     box-sizing: border-box;
@@ -10,10 +10,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #2e2e2e;
-    color: #222222;
-    padding: 0;
-    margin: 0;
+    background-color: #f4f7f6; /* Fons clar original */
+    color: #333333;
+    padding: 20px;
 }
 
 .contenidor-principal,
@@ -23,18 +22,20 @@ body {
     margin: 20px auto;
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================================================================
    2. Capçalera i Menú de Navegació Horitzontal
    ========================================================================== */
 header {
-    background-color: #555555;
+    background-color: #1e3a8a; /* Blau fosc original */
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
-    padding-top: 15px;
-    border-bottom: 4px solid #d97706;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .logo-principal {
@@ -43,7 +44,9 @@ header {
 }
 
 nav {
-    background-color: #3b3b3b;
+    background-color: #1d4ed8;
+    border-radius: 6px;
+    padding: 8px;
 }
 
 .menu-navegacio {
@@ -51,22 +54,23 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 15px;
 }
 
 .menu-navegacio li a {
     display: block;
-    color: #f1f5f9;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    padding: 12px 24px;
+    padding: 8px 16px;
+    border-radius: 4px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu-navegacio li a:hover,
 .menu-navegacio li a.actiu {
-    background-color: #d97706;
-    color: #ffffff;
+    background-color: #f59e0b; /* Accent taronja/daurat */
+    color: #1e3a8a;
 }
 
 /* ==========================================================================
@@ -90,7 +94,7 @@ nav {
 }
 
 .columna-llista h2 {
-    color: #0284c7;
+    color: #1e3a8a;
     margin-bottom: 15px;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 5px;
@@ -98,7 +102,7 @@ nav {
 
 .titol-saga {
     font-weight: bold;
-    color: #0369a1;
+    color: #1d4ed8;
     font-size: 1.1rem;
     display: block;
     margin-top: 10px;
@@ -143,16 +147,16 @@ nav {
     max-width: 650px;
     height: auto;
     max-height: 800px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 6px;
     border: 2px solid #cbd5e1;
 }
 
 /* ==========================================================================
-   4. Exercici 2: Personatges, Índex Circle i Imatges 100x150px
+   4. Exercici 2: Personatges i Imatges Sense Retallar (contain)
    ========================================================================== */
 .contenidor-personatges h2 {
-    color: #0284c7;
+    color: #1e3a8a;
     margin-bottom: 15px;
 }
 
@@ -193,12 +197,14 @@ nav {
     align-items: flex-start;
 }
 
+/* Solució de les imatges tallades: contain en comptes de cover */
 .img-fitxa-100x150 {
     width: 100px !important;
     height: 150px !important;
-    object-fit: cover;
+    object-fit: contain !important; /* Mostra el personatge sencer */
+    background-color: #f1f5f9;      /* Fons marcat per ajustar proporcions */
     border-radius: 4px;
-    border: 1px solid #94a3b8;
+    border: 1px solid #cbd5e1;
     flex-shrink: 0;
 }
 
@@ -264,12 +270,12 @@ nav {
    6. Peu de Pàgina Unificat
    ========================================================================== */
 footer {
-    background-color: #1e1e1e;
+    background-color: #1e3a8a;
     color: #ffffff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    border-top: 4px solid #d97706;
+    border-radius: 8px;
 }
 
 .footer-logo {
