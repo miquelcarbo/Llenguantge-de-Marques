@@ -10,13 +10,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #2e2e2e; /* Fons gris fosc estil Wiki */
+    background-color: #2e2e2e;
     color: #222222;
     padding: 0;
     margin: 0;
 }
 
-/* Contenidors principals centrats */
 .contenidor-principal,
 .contenidor-flex,
 .contenidor-personatges {
@@ -43,7 +42,6 @@ header {
     margin-bottom: 10px;
 }
 
-/* Menú de navegació horitzontal amb llista no ordenada */
 nav {
     background-color: #3b3b3b;
 }
@@ -67,12 +65,12 @@ nav {
 
 .menu-navegacio li a:hover,
 .menu-navegacio li a.actiu {
-    background-color: #d97706; /* Color taronja d'accent */
+    background-color: #d97706;
     color: #ffffff;
 }
 
 /* ==========================================================================
-   3. Exercici 1: Disseny Flexbox i Llista d'Arcs (serie-llistat-arcs.html)
+   3. Exercici 1: Disseny Flexbox i Llista d'Arcs
    ========================================================================== */
 .contenidor-flex {
     display: flex;
@@ -106,7 +104,6 @@ nav {
     margin-top: 10px;
 }
 
-/* Llista no ordenada principal de sagues amb la icona de cinema */
 .llista-sagues-principal {
     list-style: none;
     padding-left: 0;
@@ -125,12 +122,11 @@ nav {
     top: 4px;
     width: 20px;
     height: 20px;
-    background-image: url('../img/icono-cine.png');
+    background-image: url('icono-cine.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-/* Llista anidada numerada d'arcs */
 .llista-arcs-anidada {
     margin-left: 20px;
     margin-top: 5px;
@@ -142,7 +138,6 @@ nav {
     font-size: 0.95rem;
 }
 
-/* Mida de les imatges de la galeria d'arcs (650x800px) */
 .img-arc-galeria {
     width: 100%;
     max-width: 650px;
@@ -161,7 +156,6 @@ nav {
     margin-bottom: 15px;
 }
 
-/* Índex de personatges amb pics de cercles buits (circle) */
 .index-personatges-cercles {
     list-style-type: circle;
     margin-left: 30px;
@@ -183,7 +177,6 @@ nav {
     text-decoration: underline;
 }
 
-/* Llista de Definició dels Personatges */
 .llista-definicions-personatges dt {
     font-size: 1.3rem;
     font-weight: bold;
@@ -200,7 +193,6 @@ nav {
     align-items: flex-start;
 }
 
-/* Mida fixa i obligatòria de les imatges de personatges: 100px x 150px */
 .img-fitxa-100x150 {
     width: 100px !important;
     height: 150px !important;
@@ -214,7 +206,6 @@ nav {
     flex: 1;
 }
 
-/* Enllaços "Saber-ne més..." amb canvi de color al passar el ratolí (:hover) */
 .link-saber-mes {
     display: inline-block;
     margin-top: 8px;
@@ -225,12 +216,12 @@ nav {
 }
 
 .link-saber-mes:hover {
-    color: #dc2626; /* Canvi de color al passar el ratolí */
+    color: #dc2626;
     text-decoration: underline;
 }
 
 /* ==========================================================================
-   5. Exercici 3: Enllaços d'Ancla a Història i Detalls Finals
+   5. Exercici 3: Enllaços d'Ancla a Història
    ========================================================================== */
 .link-ancla {
     color: #2563eb;
