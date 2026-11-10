@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Características y precios de las habitaciones de Hotel Terror.">
+    <meta name="keywords" content="Hotel Terror, precios, habitaciones, tarifas, rural">
+    <meta name="author" content="Nombre y apellidos del estudiante">
+    <title>Hotel Terror - Precios y Características</title>
+    <link rel="stylesheet" href="css/estils.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/estrelles.jpg" alt="Logo Hotel Terror 4 estrellas">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="precios.html" class="active">Precios</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Zona de Contenidos -->
+    <main class="container">
+        <h1 class="main-title"><span class="highlight">Hotel Terror:</span> Características y precios</h1>
+
+        <table class="prices-table">
+            <thead>
+                <tr>
+                    <th>Tipo de Habitación</th>
+                    <th>Personas</th>
+                    <th>Características</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Habitación individual -->
+                <tr>
+                    <td class="room-type">Habitación individual</td>
+                    <td class="icon-cell">
+                        <img src="img/individual.png" alt="1 persona">
+                    </td>
+                    <td class="details-cell">Baño compartido, 20m², Microondas</td>
+                    <td class="price-cell">70 €</td>
+                </tr>
+
+                <!-- Habitación doble -->
+                <tr>
+                    <td class="room-type" rowspan="2">Habitación doble (1 o 2 camas)</td>
+                    <td class="icon-cell">
+                        <img src="img/doble.png" alt="2 personas"><br>
+                        <img src="img/individual.png" alt="1 persona">
+                    </td>
+                    <td class="details-cell" rowspan="2">Baño privado, 30m², Microondas</td>
+                    <td class="price-cell">120 €</td>
+                </tr>
+                <tr>
+                    <td class="price-cell border-top">90 €</td>
+                </tr>
+
+                <!-- Habitación doble superior -->
+                <tr>
+                    <td class="room-type">Habitación doble superior</td>
+                    <td class="icon-cell">
+                        <img src="img/doble.png" alt="2 personas">
+                    </td>
+                    <td class="details-cell">Baño privado, 35m², Zona de cocina, Cama doble</td>
+                    <td class="price-cell">140 €</td>
+                </tr>
+
+                <!-- Habitación triple -->
+                <tr>
+                    <td class="room-type" rowspan="3">Habitación triple (1, 2 o 3 camas)</td>
+                    <td class="icon-cell">
+                        <img src="img/triple.png" alt="3 personas"><br>
+                        <img src="img/doble.png" alt="2 personas"><br>
+                        <img src="img/individual.png" alt="1 persona">
+                    </td>
+                    <td class="details-cell" rowspan="3">Baño privado, 40m², Zona de cocina</td>
+                    <td class="price-cell">150 €</td>
+                </tr>
+                <tr>
+                    <td class="price-cell border-top">130 €</td>
+                </tr>
+                <tr>
+                    <td class="price-cell border-top">100 €</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="table-footer">
+                        <em>Características comunes: WiFi gratis / TV de pantalla plana / Aire acondicionado</em>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Actividad realizada por <strong>Nombre y apellidos del estudiante</strong></p>
+            <div class="credits">
+                <span>Fotografías de la portada <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a></span>
+                <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
+                    <img src="img/creative-commons.png" alt="Licencia Creative Commons BY-SA 4.0">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

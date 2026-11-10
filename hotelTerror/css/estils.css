@@ -1,0 +1,314 @@
+/* Reset i estils generals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado (Header Verde) */
+.header {
+    background-color: #3b8e27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 20px;
+    height: 70px;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Navegación */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+/* Zona Principal Hero (index.html) */
+.hero {
+    background: url('../img/casa_encantada.jpg') no-repeat center center/cover;
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 50px;
+    min-height: 480px;
+}
+
+.hero-content {
+    text-align: left;
+}
+
+.hero-content h1 {
+    color: #ff0000;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero-content h2 {
+    color: #ff0000;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Contenedor general para páginas interiores */
+.container {
+    flex: 1;
+    background-color: #e9ecef;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos principales interiores */
+.main-title {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 25px;
+    align-self: flex-start;
+}
+
+.main-title .highlight {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+.main-title-reserva {
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 25px;
+    align-self: flex-start;
+}
+
+/* Tabla de Precios (precios.html) */
+.prices-table {
+    width: 100%;
+    max-width: 850px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #7f8c8d;
+}
+
+.prices-table th {
+    background-color: #4a6572;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+    border-right: 1px solid #ffffff;
+}
+
+.prices-table th:last-child {
+    border-right: none;
+}
+
+.prices-table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.prices-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.room-type {
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: left !important;
+    border-right: 1px solid #e0e0e0;
+    width: 25%;
+}
+
+.icon-cell {
+    border-right: 1px solid #e0e0e0;
+    width: 12%;
+    line-height: 1.8;
+}
+
+.icon-cell img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.details-cell {
+    color: #7f8c8d;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    width: 48%;
+}
+
+.price-cell {
+    color: #555555;
+    width: 15%;
+}
+
+.border-top {
+    border-top: 1px solid #e0e0e0;
+}
+
+.table-footer {
+    background-color: #4a6572;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.95rem;
+}
+
+/* Formulario de Reserva (reserva.html) */
+.booking-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: #d3d3d3;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.booking-form fieldset {
+    border: 1px solid #999;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: #e6e6e6;
+    border-radius: 4px;
+}
+
+.booking-form legend {
+    font-weight: bold;
+    padding: 0 8px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group select,
+.form-group textarea {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.form-group.checkbox-group {
+    flex-direction: column;
+}
+
+.form-group.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 4px;
+    display: block;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #3b8e27;
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2d6e1e;
+}
+
+/* Pie de Página (Footer Verde) */
+.footer {
+    background-color: #3b8e27;
+    color: #1e4611;
+    padding: 15px 40px;
+    font-size: 0.85rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.footer strong {
+    color: #1e4611;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.credits a {
+    color: #ffffff;
+}
+
+.credits img {
+    height: 22px;
+    vertical-align: middle;
+}
